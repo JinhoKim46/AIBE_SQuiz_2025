@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <!-- Quiz Board Section -->
+    <div class="quiz-board">
+        <h1>AIBE S-Quiz Time</h1>
+        <table>
+            <thead>
+                <tr>
+                    {% for category in categories %}
+                        <th>{{ category }}</th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for point in points %}
+                <tr>
+                    {% for category in categories %}
+                        <td>
+                            <button class="quiz-btn" data-category="{{ category }}" data-points="{{ point }}">
+                                {{ point }}
+                            </button>
+                        </td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Team Dashboard Section -->
+    <div class="team-dashboard">
+        <h2>Team Dashboard</h2>
+        <form id="team-registration-form" class="team-form">
+            <input type="text" id="team-name" placeholder="Enter Team Name" required>
+            <button type="submit">Register</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Teams</th>
+                    <th>Points</th>
+                </tr>
+            </thead>
+            <tbody id="team-scores">
+                <!-- Dynamically populated teams -->
+            </tbody>
+        </table>
+        <!-- Undo Button -->
+        <button id="undo-button" class="undo-btn">Undo</button>
+    </div>
+
+        <!-- Quiz Popup -->
+        <div id="quiz-popup" class="popup hidden">
+            <div class="popup-content">
+                <img id="quiz-image" src="" alt="Quiz Image" style="max-width: 100%; height: auto; display: none;">
+                <p id="quiz-content"></p>
+                <div class="progress-container">
+                    <div id="quiz-progress-bar" class="progress-bar"></div>
+                </div>
+                <p id="quiz-timer">Time Left: 30s</p>
+                <button id="quiz-correct-btn">Correct</button>
+                <button id="quiz-wrong-btn">Wrong</button>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<!-- Team Selection Modal -->
+<div id="team-selection-modal" class="hidden">
+    <div class="modal-content">
+        <h2>Select Team</h2>
+        <ul id="team-options">
+            <!-- Teams will be dynamically populated here -->
+        </ul>
+        <button id="close-modal">Close</button>
+    </div>
+</div>
+{% endblock %}

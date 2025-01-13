@@ -1,0 +1,234 @@
+/* Flex Container for Layout */
+.container {
+    display: flex;
+    justify-content: space-between; /* Space between the quiz board and dashboard */
+    align-items: flex-start; /* Align items at the top */
+    gap: 20px; /* Space between the two sections */
+    padding: 20px; /* Padding inside the container */
+}
+
+/* Quiz Board Styling */
+.quiz-board {
+    flex: 4; /* Occupy 4/5 of the width */
+    margin-top: 0;
+}
+
+/* Team Dashboard Styling */
+.team-dashboard {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: flex-start; /* Align elements at the top */
+    align-items: center; /* Center horizontally */
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling */
+h1 {
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+    width: 100%; /* Ensure alignment across the flex container */
+    margin-bottom: 20px; /* Add space between the title and the content */
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+th {
+    font-weight: bold;
+    background-color: #f2f2f2;
+}
+
+.team-dashboard h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.team-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.team-form input {
+    flex: 1;
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.team-form button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.team-form button:hover {
+    background-color: #0056b3;
+}
+
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* ===== Quiz Buttons ===== */
+.quiz-btn {
+    background-color: limegreen;
+    color: white;
+    border: 1px solid #000;
+    padding: 15px;
+    width: 100%; /* Square buttons */
+    height: 100%; /* Square buttons */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quiz-btn:disabled {
+    background-color: red; /* Red for used buttons */
+    cursor: not-allowed;
+}
+
+.quiz-btn:hover:not(:disabled) {
+    background-color: #d4d4d4;
+}
+
+/* ===== Board Wrapper ===== */
+.board-wrapper {
+    display: flex;
+    justify-content: center;
+    width: max-content; /* Adjust to table width */
+    margin: 20px auto;
+    overflow-x: auto;
+    padding: 10px;
+}
+
+/* ===== Quiz Popup ===== */
+#quiz-popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 2px solid black;
+    padding: 20px;
+    z-index: 1000;
+    display: none; /* Initially hidden */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#quiz-popup img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#quiz-timer {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* ===== Progress Bar ===== */
+.progress-container {
+    width: 100%;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    height: 20px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #09c3fc;
+    width: 100%; /* Initially full width */
+    transition: width 0.1s linear;
+}
+
+#team-scores th, #team-scores td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* ===== Team Selection Modal ===== */
+#team-selection-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none; /* Initially hidden */
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+}
+
+#team-selection-modal .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+#team-options {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+#team-options li {
+    margin: 5px 0;
+    padding: 10px;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#team-options li:hover {
+    background-color: #ddd;
+}
+
+/* Team Dashboard Undo Button */
+.undo-btn {
+    margin-top: 15px; /* Add space between the table and the button */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    text-align: center;
+    width: 100%; /* Make it span the full width of the container */
+}
+
+.undo-btn:hover {
+    background-color: #0056b3;
+}

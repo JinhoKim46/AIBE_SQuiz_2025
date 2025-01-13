@@ -1,0 +1,7 @@
+name: aibe_squiz
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - flask=3.0.3
+  - pip

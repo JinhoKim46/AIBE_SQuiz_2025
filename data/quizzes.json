@@ -1,0 +1,253 @@
+[
+    {
+        "category": "Sports",
+        "points": 10,
+        "content": "static/figures/sports_messi_30.jpg",
+        "quiz_type": "image",
+        "timer": 30
+    },
+    {
+        "category": "Sports",
+        "points": 20,
+        "content": "static/figures/sports_messi_30.jpg",
+        "quiz_type": "image",
+        "timer": 30
+    },
+    {
+        "category": "Sports",
+        "points": 30,
+        "content": "static/figures/sports_messi_30.jpg",
+        "quiz_type": "image",
+        "timer": 30
+    },
+    {
+        "category": "Sports",
+        "points": 40,
+        "content": "static/figures/sports_messi_30.jpg",
+        "quiz_type": "image",
+        "timer": 30
+    },
+    {
+        "category": "Sports",
+        "points": 50,
+        "content": "static/figures/sports_messi_30.jpg",
+        "quiz_type": "image",
+        "timer": 30
+    },
+
+    {
+        "category": "Place",
+        "points": 10,
+        "content": "static/figures/sports_messi_30.jpg",
+        "quiz_type": "image",
+        "timer": 30
+    },
+    {
+        "category": "Place",
+        "points": 20,
+        "content": "static/figures/sports_messi_30.jpg",
+        "quiz_type": "image",
+        "timer": 30
+    },
+    {
+        "category": "Place",
+        "points": 30,
+        "content": "static/figures/sports_messi_30.jpg",
+        "quiz_type": "image",
+        "timer": 30
+    },
+    {
+        "category": "Place",
+        "points": 40,
+        "content": "static/figures/sports_messi_30.jpg",
+        "quiz_type": "image",
+        "timer": 30
+    },
+    {
+        "category": "Place",
+        "points": 50,
+        "content": "static/figures/sports_messi_30.jpg",
+        "quiz_type": "image",
+        "timer": 30
+    },
+
+    {
+        "category": "Famous",
+        "points": 10,
+        "content": "static/figures/sports_messi_30.jpg",
+        "quiz_type": "image",
+        "timer": 30
+    },
+    {
+        "category": "Famous",
+        "points": 20,
+        "content": "static/figures/sports_messi_30.jpg",
+        "quiz_type": "image",
+        "timer": 30
+    },
+    {
+        "category": "Famous",
+        "points": 30,
+        "content": "static/figures/sports_messi_30.jpg",
+        "quiz_type": "image",
+        "timer": 30
+    },
+    {
+        "category": "Famous",
+        "points": 40,
+        "content": "static/figures/sports_messi_30.jpg",
+        "quiz_type": "image",
+        "timer": 30
+    },
+    {
+        "category": "Famous",
+        "points": 50,
+        "content": "static/figures/sports_messi_30.jpg",
+        "quiz_type": "image",
+        "timer": 30
+    },
+
+    {
+        "category": "Brend",
+        "points": 10,
+        "content": "static/figures/sports_messi_30.jpg",
+        "quiz_type": "image",
+        "timer": 30
+    },
+    {
+        "category": "Brend",
+        "points": 20,
+        "content": "static/figures/sports_messi_30.jpg",
+        "quiz_type": "image",
+        "timer": 30
+    },
+    {
+        "category": "Brend",
+        "points": 30,
+        "content": "static/figures/sports_messi_30.jpg",
+        "quiz_type": "image",
+        "timer": 30
+    },
+    {
+        "category": "Brend",
+        "points": 40,
+        "content": "static/figures/sports_messi_30.jpg",
+        "quiz_type": "image",
+        "timer": 30
+    },
+    {
+        "category": "Brend",
+        "points": 50,
+        "content": "static/figures/sports_messi_30.jpg",
+        "quiz_type": "image",
+        "timer": 30
+    },
+
+    {
+        "category": "Flags",
+        "points": 10,
+        "content": "static/figures/sports_messi_30.jpg",
+        "quiz_type": "image",
+        "timer": 30
+    },
+    {
+        "category": "Flags",
+        "points": 20,
+        "content": "static/figures/sports_messi_30.jpg",
+        "quiz_type": "image",
+        "timer": 30
+    },
+    {
+        "category": "Flags",
+        "points": 30,
+        "content": "static/figures/sports_messi_30.jpg",
+        "quiz_type": "image",
+        "timer": 30
+    },
+    {
+        "category": "Flags",
+        "points": 40,
+        "content": "static/figures/sports_messi_30.jpg",
+        "quiz_type": "image",
+        "timer": 30
+    },
+    {
+        "category": "Flags",
+        "points": 50,
+        "content": "static/figures/sports_messi_30.jpg",
+        "quiz_type": "image",
+        "timer": 30
+    },
+
+    {
+        "category": "Movie",
+        "points": 10,
+        "content": "static/figures/sports_messi_30.jpg",
+        "quiz_type": "image",
+        "timer": 30
+    },
+    {
+        "category": "Movie",
+        "points": 20,
+        "content": "static/figures/sports_messi_30.jpg",
+        "quiz_type": "image",
+        "timer": 30
+    },
+    {
+        "category": "Movie",
+        "points": 30,
+        "content": "static/figures/sports_messi_30.jpg",
+        "quiz_type": "image",
+        "timer": 30
+    },
+    {
+        "category": "Movie",
+        "points": 40,
+        "content": "static/figures/sports_messi_30.jpg",
+        "quiz_type": "image",
+        "timer": 30
+    },
+    {
+        "category": "Movie",
+        "points": 50,
+        "content": "static/figures/sports_messi_30.jpg",
+        "quiz_type": "image",
+        "timer": 30
+    },
+
+    {
+        "category": "Music",
+        "points": 10,
+        "content": "static/figures/sports_messi_30.jpg",
+        "quiz_type": "image",
+        "timer": 30
+    },
+    {
+        "category": "Music",
+        "points": 20,
+        "content": "static/figures/sports_messi_30.jpg",
+        "quiz_type": "image",
+        "timer": 30
+    },
+    {
+        "category": "Music",
+        "points": 30,
+        "content": "static/figures/sports_messi_30.jpg",
+        "quiz_type": "image",
+        "timer": 30
+    },
+    {
+        "category": "Music",
+        "points": 40,
+        "content": "static/figures/sports_messi_30.jpg",
+        "quiz_type": "image",
+        "timer": 30
+    },
+    {
+        "category": "Music",
+        "points": 50,
+        "content": "static/figures/sports_messi_30.jpg",
+        "quiz_type": "image",
+        "timer": 30
+    }
+]
