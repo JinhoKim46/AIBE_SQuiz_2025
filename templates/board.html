@@ -52,21 +52,18 @@
     </div>
 
         <!-- Quiz Popup -->
+   
         <div id="quiz-popup" class="popup hidden">
-            <div class="popup-content">
-                <img id="quiz-image" src="" alt="Quiz Image" style="max-width: 100%; height: auto; display: none;">
-                <p id="quiz-content"></p>
-                <div class="progress-container">
-                    <div id="quiz-progress-bar" class="progress-bar"></div>
-                </div>
-                <p id="quiz-timer">Time Left: 30s</p>
-                <button id="quiz-correct-btn">Correct</button>
-                <button id="quiz-wrong-btn">Wrong</button>
+            <img id="quiz-image" src="" alt="Quiz Image" style="max-width: 100%; height: auto; display: none; cursor: pointer;">
+            <p id="quiz-content"></p>
+            <p id="quiz-answer" style="display: none; color: red; font-weight: bold;">Answer: </p>
+            <div class="progress-container">
+                <div id="quiz-progress-bar" class="progress-bar"></div>
             </div>
-        </div>
-    </div>
-
-    
+            <p id="quiz-timer">Time Left: 30s</p>
+            <button id="quiz-correct-btn">Correct</button>
+            <button id="quiz-wrong-btn">Wrong</button>
+        </div>    
 </div>
 
 <!-- Team Selection Modal -->
@@ -79,4 +76,7 @@
         <button id="close-modal">Close</button>
     </div>
 </div>
+
+
+
 {% endblock %}

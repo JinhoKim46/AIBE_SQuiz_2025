@@ -95,6 +95,25 @@ def update_score():
     return jsonify({'success': False, 'error': 'Team not found'}), 404
 
 
+@app.route('/get_answer_image')
+def get_answer_image():
+    category = request.args.get('category')
+    points = request.args.get('points')
+    app.logger.info(f"Category: {category}, Points: {points}")  # Log inputs
+
+    points = int(points) if points else None
+    quizzes = load_json(QUIZ_FILE)
+    for quiz in quizzes:
+        if quiz["category"] == category and quiz["points"] == points:
+            app.logger.info(f"Found quiz: {quiz}")  # Log the matched quiz
+            return jsonify({
+                "answerImage": quiz.get("answer_image"),
+                "answer": quiz.get("answer")
+            })
+
+    app.logger.warning("Quiz not found")
+    return jsonify({"error": "Quiz not found"}), 404
+
 
 
 if __name__ == '__main__':

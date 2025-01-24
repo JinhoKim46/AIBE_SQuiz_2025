@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const quizButtons = document.querySelectorAll('.quiz-btn');
     const quizPopup = document.getElementById('quiz-popup');
     const quizImage = document.getElementById('quiz-image');
+    const quizAnswer = document.getElementById('quiz-answer');
     const quizContent = document.getElementById('quiz-content');
-    const quizTimer = document.getElementById('quiz-timer');
     const correctBtn = document.getElementById('quiz-correct-btn');
     const wrongBtn = document.getElementById('quiz-wrong-btn');
     const teamOptions = document.getElementById('team-options');
@@ -14,9 +14,75 @@ document.addEventListener('DOMContentLoaded', () => {
     const teamList = document.getElementById('team-scores');
     let timerInterval;
     let lastBlockedButton = null;
-    let lastAction = null; // To store the last action: teamId and points
     const undoHistory = []; // To store a history of actions for undo
+    let currentCategory = '';
+    let currentPoints = 0;
 
+    // Dynamically toggle answer visibility on image click
+    quizImage.addEventListener('click', () => {
+        clearInterval(timerInterval); // Stop the timer
+        quizAnswer.style.display = 'block'; // Show the answer
+
+        if (currentCategory === 'Famous') {
+            // Fetch the updated image for "Famous" category
+            fetch(`/get_answer_image?category=${currentCategory}&points=${currentPoints}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.answerImage) {
+                        quizImage.src = `${data.answerImage}?t=${new Date().getTime()}`; // Update image dynamically
+                        quizAnswer.textContent = `Answer: ${data.answer}`;
+                    } else {
+                        console.error('Answer image not found.');
+                    }
+                })
+                .catch(err => console.error('Error fetching answer image:', err));
+        }
+    });
+
+
+    // Handle quiz button clicks
+    quizButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            currentCategory = button.dataset.category;
+            currentPoints = parseInt(button.dataset.points, 10);
+
+            fetch(`/quiz/${currentCategory}/${currentPoints}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.quiz_type === 'image') {
+                        quizImage.src = data.content;
+                        quizImage.style.display = 'block';
+                        quizContent.textContent = '';
+                        quizAnswer.textContent = `Answer: ${data.answer || 'No answer available'}`;
+                    } else {
+                        quizImage.style.display = 'none';
+                        quizContent.textContent = data.content;
+                        quizAnswer.textContent = `Answer: ${data.answer || 'No answer available'}`;
+                    }
+
+                    quizAnswer.style.display = 'none'; // Hide the answer initially
+                    quizPopup.style.display = 'block';
+                    button.disabled = true;
+                    button.style.backgroundColor = 'red';
+                    lastBlockedButton = button;
+
+                    startTimer(data.timer);
+                    undoButton.classList.remove('hidden');
+                });
+        });
+
+        // Allow re-enabling blocked quizzes with right-click
+        button.addEventListener('contextmenu', (event) => {
+            event.preventDefault();
+            if (button.disabled) {
+                if (confirm('Do you want to make this quiz available again?')) {
+                    button.disabled = false;
+                    button.style.backgroundColor = '';
+                }
+            }
+        });
+    });
+    
     // Load teams into the team dashboard
     const loadTeams = () => {
         fetch('/get_teams')

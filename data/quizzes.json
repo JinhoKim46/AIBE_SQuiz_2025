@@ -2,252 +2,251 @@
     {
         "category": "Sports",
         "points": 10,
-        "content": "static/figures/sports_messi_30.jpg",
+        "content": "static/figures/sports_10_LeBron_James.jpg",
         "quiz_type": "image",
+        "answer": "LeBron James",
         "timer": 30
     },
     {
         "category": "Sports",
         "points": 20,
-        "content": "static/figures/sports_messi_30.jpg",
+        "content": "static/figures/sports_20_Shohei_Ohtani.jpg",
         "quiz_type": "image",
+        "answer": "Shohei Ohtani",
         "timer": 30
     },
     {
         "category": "Sports",
         "points": 30,
-        "content": "static/figures/sports_messi_30.jpg",
+        "content": "static/figures/sports_30_Michael_Schumacher.jpg",
         "quiz_type": "image",
+        "answer": "Michael Schumacher",
         "timer": 30
     },
     {
         "category": "Sports",
         "points": 40,
-        "content": "static/figures/sports_messi_30.jpg",
+        "content": "static/figures/sports_40_Ma_Long.jpg",
         "quiz_type": "image",
+        "answer": "Ma Long",
         "timer": 30
     },
     {
         "category": "Sports",
         "points": 50,
-        "content": "static/figures/sports_messi_30.jpg",
+        "content": "static/figures/sports_50_Carolina_Marin.jpg",
         "quiz_type": "image",
+        "answer": "Carolina Marin",
         "timer": 30
     },
 
     {
         "category": "Place",
         "points": 10,
-        "content": "static/figures/sports_messi_30.jpg",
+        "content": "static/figures/place_10_Cologne_Cathedral_Germany.jpg",
         "quiz_type": "image",
+        "answer": "Cologne Cathedral / Germany",
         "timer": 30
     },
     {
         "category": "Place",
         "points": 20,
-        "content": "static/figures/sports_messi_30.jpg",
+        "content": "static/figures/place_20_Meteora_Greece.jpg",
         "quiz_type": "image",
+        "answer": "Meteora / Greece",
         "timer": 30
     },
     {
         "category": "Place",
         "points": 30,
-        "content": "static/figures/sports_messi_30.jpg",
+        "content": "static/figures/place_30_Lempuyang_temple_Indonesia.jpg",
         "quiz_type": "image",
+        "answer": "Lempuyang temple / Indonesia",
         "timer": 30
     },
     {
         "category": "Place",
         "points": 40,
-        "content": "static/figures/sports_messi_30.jpg",
+        "content": "static/figures/place_40_Uyuni_salt_flats_Bolivia.jpg",
         "quiz_type": "image",
+        "answer": "Uyuni salt flats / Bolivia",
         "timer": 30
     },
     {
         "category": "Place",
         "points": 50,
-        "content": "static/figures/sports_messi_30.jpg",
+        "content": "static/figures/place_50_Mount_Rushmore_National_Memorial_USA.jpg",
         "quiz_type": "image",
+        "answer": "Mount Rushmore National Memorial / USA",
         "timer": 30
     },
 
     {
         "category": "Famous",
         "points": 10,
-        "content": "static/figures/sports_messi_30.jpg",
+        "content": "static/figures/famous_10_Melania_Trump.jpg",
         "quiz_type": "image",
-        "timer": 30
-    },
-    {
-        "category": "Famous",
-        "points": 20,
-        "content": "static/figures/sports_messi_30.jpg",
-        "quiz_type": "image",
-        "timer": 30
-    },
-    {
-        "category": "Famous",
-        "points": 30,
-        "content": "static/figures/sports_messi_30.jpg",
-        "quiz_type": "image",
+        "answer": "Donald Trump",
+        "answer_image": "static/figures/famous_10_A_Donald_Trump.jpg",
         "timer": 30
     },
     {
         "category": "Famous",
         "points": 40,
-        "content": "static/figures/sports_messi_30.jpg",
+        "content": "static/figures/famous_20_Jay_z.jpg",
         "quiz_type": "image",
+        "answer": "Beyonce Giselle Knowles-Carter",
+        "answer_image": "static/figures/famous_20_A_Beyonce_Giselle_Knowles.jpg",
+        "timer": 30
+    },
+    {
+        "category": "Famous",
+        "points": 20,
+        "content": "static/figures/famous_30_Benny_Blanco.jpg",
+        "quiz_type": "image",
+        "answer": "Celena Marie Gomez",
+        "answer_image": "static/figures/famous_30_A_Celena_Marie_Gomez.jpg",
+        "timer": 30
+    },
+    {
+        "category": "Famous",
+        "points": 30,
+        "content": "static/figures/famous_40_Callum_Turner.jpg",
+        "quiz_type": "image",
+        "answer": "Dukagjin_Lipa",
+        "answer_image": "static/figures/famous_40_A_Dukagjin_Lipa .jpg",
         "timer": 30
     },
     {
         "category": "Famous",
         "points": 50,
-        "content": "static/figures/sports_messi_30.jpg",
+        "content": "static/figures/famous_50_Tom_Holland.jpg",
         "quiz_type": "image",
+        "answer": "Zendaya Maree Stoermer Coleman",
+        "answer_image": "static/figures/famous_50_A_Zendaya_Maree_Stoermer_Coleman.jpg",
         "timer": 30
     },
 
     {
         "category": "Brend",
         "points": 10,
-        "content": "static/figures/sports_messi_30.jpg",
+        "content": "static/figures/brand_10_nvidia.jpg",
         "quiz_type": "image",
+        "answer": "Nvidia",
         "timer": 30
     },
     {
         "category": "Brend",
         "points": 20,
-        "content": "static/figures/sports_messi_30.jpg",
+        "content": "static/figures/brand_20_dpd.jpg",
         "quiz_type": "image",
+        "answer": "DPD",
         "timer": 30
     },
     {
         "category": "Brend",
         "points": 30,
-        "content": "static/figures/sports_messi_30.jpg",
+        "content": "static/figures/brand_30_Augustiner.jpg",
         "quiz_type": "image",
+        "answer": "Augustiner Bräu",
         "timer": 30
     },
     {
         "category": "Brend",
         "points": 40,
-        "content": "static/figures/sports_messi_30.jpg",
+        "content": "static/figures/brand_40_Airbus.jpg",
         "quiz_type": "image",
+        "answer": "Airbus",
         "timer": 30
     },
     {
         "category": "Brend",
         "points": 50,
-        "content": "static/figures/sports_messi_30.jpg",
+        "content": "static/figures/brand_50_Lindt.jpg",
         "quiz_type": "image",
+        "answer": "Lindt",
         "timer": 30
     },
 
     {
-        "category": "Flags",
+        "category": "Flag",
         "points": 10,
-        "content": "static/figures/sports_messi_30.jpg",
+        "content": "static/figures/flag_10_Wales.jpg",
         "quiz_type": "image",
+        "answer": "Wales",
         "timer": 30
     },
     {
-        "category": "Flags",
+        "category": "Flag",
         "points": 20,
-        "content": "static/figures/sports_messi_30.jpg",
+        "content": "static/figures/flag_20_Morocco.jpg",
         "quiz_type": "image",
+        "answer": "Morocco",
         "timer": 30
     },
     {
-        "category": "Flags",
+        "category": "Flag",
         "points": 30,
-        "content": "static/figures/sports_messi_30.jpg",
+        "content": "static/figures/flag_30_The_Republic_of_the_Congo.jpg",
         "quiz_type": "image",
+        "answer": "The Republic of the Congo",
         "timer": 30
     },
     {
-        "category": "Flags",
+        "category": "Flag",
         "points": 40,
-        "content": "static/figures/sports_messi_30.jpg",
+        "content": "static/figures/flag_40_El_Salvador.jpg",
         "quiz_type": "image",
+        "answer": "El Salvador",
         "timer": 30
     },
     {
-        "category": "Flags",
+        "category": "Flag",
         "points": 50,
-        "content": "static/figures/sports_messi_30.jpg",
+        "content": "static/figures/flag_50_Bhutan.jpg",
         "quiz_type": "image",
+        "answer": "Bhutan",
         "timer": 30
     },
 
     {
         "category": "Movie",
         "points": 10,
-        "content": "static/figures/sports_messi_30.jpg",
+        "content": "static/figures/movie_10_Titanic.jpg",
         "quiz_type": "image",
+        "answer": "Titanic",
         "timer": 30
     },
     {
         "category": "Movie",
         "points": 20,
-        "content": "static/figures/sports_messi_30.jpg",
+        "content": "static/figures/movie_20_The_Sound_of_Music.jpg",
         "quiz_type": "image",
+        "answer": "The Sound of Music",
         "timer": 30
     },
     {
         "category": "Movie",
         "points": 30,
-        "content": "static/figures/sports_messi_30.jpg",
+        "content": "static/figures/movie_30_The_Meg2.jpg",
         "quiz_type": "image",
+        "answer": "The Meg2",
         "timer": 30
     },
     {
         "category": "Movie",
         "points": 40,
-        "content": "static/figures/sports_messi_30.jpg",
+        "content": "static/figures/movie_40_La_La_Land.jpg",
         "quiz_type": "image",
+        "answer": "La La Land",
         "timer": 30
     },
     {
         "category": "Movie",
         "points": 50,
-        "content": "static/figures/sports_messi_30.jpg",
+        "content": "static/figures/movie_50_MI4_Ghost_Protocol.jpg",
         "quiz_type": "image",
-        "timer": 30
-    },
-
-    {
-        "category": "Music",
-        "points": 10,
-        "content": "static/figures/sports_messi_30.jpg",
-        "quiz_type": "image",
-        "timer": 30
-    },
-    {
-        "category": "Music",
-        "points": 20,
-        "content": "static/figures/sports_messi_30.jpg",
-        "quiz_type": "image",
-        "timer": 30
-    },
-    {
-        "category": "Music",
-        "points": 30,
-        "content": "static/figures/sports_messi_30.jpg",
-        "quiz_type": "image",
-        "timer": 30
-    },
-    {
-        "category": "Music",
-        "points": 40,
-        "content": "static/figures/sports_messi_30.jpg",
-        "quiz_type": "image",
-        "timer": 30
-    },
-    {
-        "category": "Music",
-        "points": 50,
-        "content": "static/figures/sports_messi_30.jpg",
-        "quiz_type": "image",
+        "answer": "MI4-Ghost Protocol",
         "timer": 30
     }
 ]
